@@ -1,11 +1,17 @@
-
 #include<stdio.h>
 int main()
 {
-    int a,b,c,d;
-    scanf("%d %d %d %d",&a,&b,&c,&d);
-    int ar1=a*b;
-    int ar2=(a-(c+c))*(b-(c+c));
-    if(ar2<=0) printf("Impossible");
-    else printf("%d",(ar1-ar2)*d);
+    int L,B,W,C,area,Tot_Cost;
+    scanf("%d%d%d%d",&L,&B,&W,&C);
+    if(L<=W+W || B<=W+W)
+    {
+        printf("Impossible");
+    }
+    else
+    {
+    area=L*B-((L-2*W)*(B-2*W));
+   Tot_Cost=area*C;
+    printf("%d",Tot_Cost);
+    }
+    return 0;
 }
