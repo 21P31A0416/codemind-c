@@ -1,8 +1,9 @@
 #include<stdio.h>
 int main()
 {
- int n;
- scanf("%d", &n);
- printf("%d",(n*(n-3))/2);
-return 0;
+    int p,n;
+    scanf("%d",&n);
+    p=n*(n-3)/2;
+    printf("%d",p);
+    return 0;
 }
